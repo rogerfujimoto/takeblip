@@ -1,0 +1,126 @@
+{
+  "id": "ecb7df5d-a29a-47fb-a0ee-8e114caa7379",
+  "version": "2.0",
+  "name": "Take a Blip",
+  "url": "https://account.blip.ai",
+  "tests": [{
+    "id": "f61128ed-80c7-47e1-85c2-68807fd179a9",
+    "name": "CT01AcessarCadastro",
+    "commands": [{
+      "id": "bf2e6d5c-4f9f-4525-ae25-28913bc9200b",
+      "comment": "Acessar site Take Blip",
+      "command": "open",
+      "target": "/login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dblip-portal%26redirect_uri%3Dhttps%253A%252F%252Fportal.blip.ai%252Fauthorize%26response_type%3Did_token%2520token%26scope%3Doffline_access%2520openid%2520profile%2520email%2520api-msging-hub.full_access%26state%3Dac7affc61f2f41b583a38097040b3159%26nonce%3Df3982e609ca24569808c458150071868",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8061fa40-91e3-4f3b-979d-59e3eef1d11b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "746x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e47cc4f-18b4-415c-8e08-1624f99fbbf2",
+      "comment": "Acessar cadastro de usuário ",
+      "command": "click",
+      "target": "id=blip-register",
+      "targets": [
+        ["id=blip-register", "id"],
+        ["linkText=Register for free", "linkText"],
+        ["css=#blip-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register for free')]", "xpath:link"],
+        ["xpath=//a[@id='blip-register']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login-fieldset']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/registerv2?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dblip-portal%26redirect_uri%3Dhttps%253A%252F%252Fportal.blip.ai%252Fauthorize%26response_type%3Did_token%2520token%26scope%3Doffline_access%2520openid%2520profile%2520email%2520api-msging-hub.full_access%26state%3Dac7affc61f2f41b583a38097040b3159%26nonce%3Df3982e609ca24569808c458150071868&anonymousUserId=nfahah08pse-ky7bedos')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register for free')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc01367-d954-44b8-9bd9-55d7b04a8b13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .hydrated",
+      "targets": [
+        ["css=.flex > .hydrated", "css:finder"],
+        ["xpath=//form[@id='register-form']/div[2]/bds-checkbox", "xpath:idRelative"],
+        ["xpath=//bds-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7db669b0-7ee0-441c-9668-4ee091719af0",
+    "name": "CT01Telefone",
+    "commands": [{
+      "id": "1abfeb43-8598-46bc-a273-7d90c08a1230",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23a1c00c-bfe1-4d2b-ac86-ce56bee9a3f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "746x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a22c45f-5ef0-4082-afac-724096c6d026",
+      "comment": "",
+      "command": "click",
+      "target": "id=blip-register",
+      "targets": [
+        ["id=blip-register", "id"],
+        ["linkText=Register for free", "linkText"],
+        ["css=#blip-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register for free')]", "xpath:link"],
+        ["xpath=//a[@id='blip-register']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login-fieldset']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/registerv2?returnUrl=%2Faccount&anonymousUserId=nfahah08pse-ky7bedos')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register for free')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb0f48f-a0ca-485f-9d1b-bfefc649f90f",
+      "comment": "",
+      "command": "click",
+      "target": "id=PhoneNumber",
+      "targets": [
+        ["id=PhoneNumber", "id"],
+        ["name=PhoneNumber", "name"],
+        ["css=#PhoneNumber", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-6004']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0de15d3-bb10-46da-b024-f93ed5b524c3",
+      "comment": "Validar telefone ",
+      "command": "type",
+      "target": "id=PhoneNumber",
+      "targets": [
+        ["id=PhoneNumber", "id"],
+        ["name=PhoneNumber", "name"],
+        ["css=#PhoneNumber", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-6004']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "00000000000000000"
+    }]
+  }],
+  "suites": [{
+    "id": "6e3c1587-6ff5-4517-b447-d3e4e8ff237e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f61128ed-80c7-47e1-85c2-68807fd179a9"]
+  }],
+  "urls": ["https://account.blip.ai/"],
+  "plugins": []
+}
